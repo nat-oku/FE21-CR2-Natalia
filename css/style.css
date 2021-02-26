@@ -26,6 +26,7 @@ a {
 
 body {
   line-height: 1.5;
+  overflow: hidden;
 }
 
 /* here are stylings for the header section */
@@ -42,18 +43,46 @@ div.logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* styling navbar */
+  width: 100%;
 }
 
-div.logo .nav {
+div.logo #logo-header {
+  padding: 25px 40px;
+  width: 15em;
+}
+
+div.logo #banner-header {
+  padding: 30px 20px 10px;
+  width: 20em;
+}
+
+/* styling navbar */
+ul[class=nav] {
   text-align: left;
   width: 100%;
-  height: 50px;
-  background-color: #333;
+  height: 70px;
+  background-color: #0E0D0D;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul[class=nav] li a {
+  color: #FFFFFF;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul[class=nav] a:hover {
+  text-decoration: underline;
 }
 
 body {
-  background-color: #C4C4C4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

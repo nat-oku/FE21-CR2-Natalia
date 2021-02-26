@@ -7,13 +7,37 @@ div.logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  
+  #logo-header {
+    padding: 25px 40px;
+    width: 15em;
+  }
+
+  #banner-header {
+    padding: 30px 20px 10px;
+    width: 20em;
+  }
+}
 
   /* styling navbar */
+ul[class=nav] {
+  text-align: left;
+  width: 100%;
+  height: 70px;
+  background-color: $brand-color-2;
+  list-style: none;
+  display: flex;
+  align-items: center;
 
-  .nav {
-    text-align: left;
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-  } 
-}
+  li a {
+    color: $brand-color-3;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+} 
