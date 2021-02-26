@@ -57,10 +57,9 @@ div.logo #banner-header {
 }
 
 /* styling navbar */
-ul[class=nav] {
-  text-align: left;
+.nav {
   width: 100%;
-  height: 70px;
+  height: 40px;
   background-color: #0E0D0D;
   list-style: none;
   display: -webkit-box;
@@ -71,18 +70,49 @@ ul[class=nav] {
           align-items: center;
 }
 
-ul[class=nav] li a {
+.nav li a {
   color: #FFFFFF;
-  padding: 25px;
-  font-weight: bold;
+  padding: 10px;
   font-size: 1.2em;
 }
 
-ul[class=nav] a:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
 /* media queries */
+/* media queries for mobile 0px-480px*/
+@media screen and (max-width: 480px) {
+  div.logo #logo-header {
+    padding: 25px 40px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  div.logo #banner-header {
+    display: none;
+  }
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* media queries for tablet 481px-1200px*/
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  div.logo {
+    width: 100%;
+  }
+  div.logo #logo-header {
+    padding: 25px 40px;
+    width: 10em;
+  }
+  div.logo #banner-header {
+    padding: 30px 20px 10px;
+    width: 12em;
+  }
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
