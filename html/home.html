@@ -7,103 +7,102 @@
   <link rel="stylesheet" href="../css/style.css">
   <title>Newspaper CS | Home</title>
 </head>
+
 <body>
-  <div class="gridContainer">
-    <header>
-      <!-- logo section -->
-      <div class="logo">
-        <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-header">
-        
-        <a href="https://codefactory.wien/de/full-stack-web-developer-de/" target="_blank"><img id="banner-header" src="../img/banner-1.png" alt="Full Stack Developer banner"></a>
+  <header>
+    <!-- logo section -->
+    <div class="logo">
+      <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-header">
+      
+      <a href="https://codefactory.wien/de/full-stack-web-developer-de/" target="_blank"><img id="banner-header" src="../img/banner-1.png" alt="Full Stack Developer banner"></a>
+    </div>
+    <!-- navbar section -->
+    <ul class="nav">
+      <li class="nav-link"><a href=home.html>Home</a></li>
+      <li class="nav-link"><a href=technology.html>Tech</a></li>
+      <li class="nav-link"><a href=culture.html>Culture</a></li>
+      <li class="nav-link"><a href=video.html>Video</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- 3-column container for 1st articles -->
+    <div class="col-1 main--h1" >
+      <h1>Top News</h1>
+    </div>
+    <div class="col-3" > <!-- image reihe -->
+      <div class="main__article">
+        <img src="../img/jeff.png" alt="Jeff Benson" class="main--item">
+        <h4 class="main--h4">Lex Luthor or the boy next door?</h4>
       </div>
-      <!-- navbar section -->
-      <ul class="nav">
+      <div class="main__article">
+        <img src="../img/eu.png" alt="EU" class="main--item">
+        <h4 class="main--h4">10 ways to keep your files safe</h4>
+      </div>
+      <div class="main__article">
+        <img src="../img/phone.png" alt="Spotify App" class="main--item">
+        <h4 class="main--h4">Spotify raises limit of offline songs to 10,000 per device</h4>
+      </div>
+    </div>
+
+    <!-- 3-column container for 1st articles -->
+    <div class="col-1 main--h1" >
+      <h1>Popular</h1>
+    </div>
+    <div class="col-3" > <!-- image reihe -->
+      <div class="main__article">
+        <img src="../img/iphone.png" alt="iPhone" class="main--item">
+        <h4 class="main--h4">All the reasons to avoid purchasing an Iphone</h4>
+      </div>
+      <div class="main__article">
+        <img src="../img/one.png" alt="EU" class="main--item">
+        <h4 class="main--h4">OnePlus announces new solar-powered earphones</h4>
+      </div>
+      <div class="main__article">
+        <img src="../img/musk.jpg" alt="Spotify App" class="main--item">
+        <h4 class="main--h4">Elon Musk smokes a cigarette in space</h4>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="col-1-banner">
+      <a href="https://www.codefactory.wien" target="_blank"><img src="../img/banner-3.png" alt="banner How to become a Fullstack Developer"></a>
+    </div>
+
+    <!-- 2-column container for 2nd articles -->
+    <div class="col-2" > <!-- image reihe -->
+      <div class="col-2__article">
+        <img src="../img/polar.png" alt="Polar watches" class="col-2--item">
+        <h4 class="main--h4">Polar's watches will watch you when you sleep</h4>
+      </div>
+      <div class="col-2__article">
+        <img src="../img/nasa.png" alt="Nasa" class="col-2--item">
+        <h4 class="main--h4">Popular holiday destination for this Christmas</h4>
+      </div>
+      <div class="col-2__article">
+        <img src="../img/smart.png" alt="Smart Home" class="col-2--item">
+        <h4 class="main--h4">Smart Home watches will watch you when you sleep</h4>
+      </div>
+      <div class="col-2__article">
+        <img src="../img/snowden.jpg" alt="Code" class="col-2--item">
+        <h4 class="main--h4">Why JavaScript is the perfect technology for you</h4>
+    </div>
+  </main>
+  
+  <footer >
+    <!-- footer section with link, logo and copyrights  -->
+  <!-- navbar section -->
+    <div class="footerContainer">
+      <ul class="nav footerContainer__nav">
         <li class="nav-link"><a href=home.html>Home</a></li>
         <li class="nav-link"><a href=technology.html>Tech</a></li>
         <li class="nav-link"><a href=culture.html>Culture</a></li>
         <li class="nav-link"><a href=video.html>Video</a></li>
       </ul>
-    </header>
+      <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-footer">
+    </div>
+    <h4 class="footer--h4">&#169; Natalia Bochenek CodeFactory 2021</h4>
+  </footer>
   
-    <main>
-      <!-- 3-column container for 1st articles -->
-      <div class="col-3" > <!-- image reihe -->
-        <div class="col-1 main--h1" >
-          <h1>Top News</h1>
-        </div>
-        <div class="main__article">
-          <img src="../img/jeff.png" alt="Jeff Benson" class="main--item">
-          <h4 class="main--h4">Lex Luthor or the boy next door?</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/eu.png" alt="EU" class="main--item">
-          <h4 class="main--h4">10 ways to keep your files safe</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/phone.png" alt="Spotify App" class="main--item">
-          <h4 class="main--h4">Spotify raises limit of offline songs to 10,000 per device</h4>
-        </div>
-      </div>
-
-      <!-- 3-column container for 1st articles -->
-      <div class="col-3" > <!-- image reihe -->
-        <div class="col-1 main--h1" ><h1>Popular</h1>
-        </div>
-        <div class="main__article">
-          <img src="../img/iphone.png" alt="iPhone" class="main--item">
-          <h4 class="main--h4">All the reasons to avoid purchasing an Iphone</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/one.png" alt="EU" class="main--item">
-          <h4 class="main--h4">OnePlus announces new solar-powered earphones</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/musk.jpg" alt="Spotify App" class="main--item">
-          <h4 class="main--h4">Elon Musk smokes a cigarette in space</h4>
-        </div>
-      </div>
-
-      <!-- banner -->
-      <div class="col-1-banner">
-        <img src="../img/banner-3.png" alt="">
-      </div>
-
-      <!-- 2-column container for 2nd articles -->
-      <div class="col-2" > <!-- image reihe -->
-        <div class="main__article">
-          <img src="../img/polar.png" alt="Polar watches" class="main--item">
-          <h4 class="main--h4">Polar's watches will watch you when you sleep</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/nasa.png" alt="Nasa" class="main--item">
-          <h4 class="main--h4">Popular holiday destination for this Christmas</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/smart.png" alt="Smart Home" class="main--item">
-          <h4 class="main--h4">Smart Home watches will watch you when you sleep</h4>
-        </div>
-        <div class="main__article">
-          <img src="../img/snowden.jpg" alt="Code" class="main--item">
-          <h4 class="main--h4">Why JavaScript is the perfect technology for you</h4>
-      </div>
-    </main>
-    
-    <footer >
-      <!-- footer section with link, logo and copyrights  -->
-    <!-- navbar section -->
-      <div class="footerContainer">
-        <ul class="nav footerContainer__nav">
-          <li class="nav-link"><a href=home.html>Home</a></li>
-          <li class="nav-link"><a href=technology.html>Tech</a></li>
-          <li class="nav-link"><a href=culture.html>Culture</a></li>
-          <li class="nav-link"><a href=video.html>Video</a></li>
-        </ul>
-        <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-footer">
-      </div>
-      <h4 class="footer--h4">&#169; Natalia Bochenek CodeFactory 2021</h4>
-    </footer>
-    
-  </div>
-
 </body>
 </html>
