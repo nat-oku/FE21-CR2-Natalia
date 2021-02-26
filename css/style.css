@@ -228,6 +228,20 @@ main {
 }
 
 /* media queries for tablet 481px-1200px*/
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  /* stylings for 3-column container */
+  .col-3 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  /* stylings for 2-column container */
+  .col-2 {
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+    row-gap: 2em;
+  }
+}
+
 /* styles for footer */
 footer {
   background-color: #0E0D0D;
