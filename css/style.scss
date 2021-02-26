@@ -1,3 +1,7 @@
+@import "_variables";
+@import "reset-styles";
+
 body {
-  background-color: aquamarine;
+  background-color: $brand-color-1;
+  color: $brand-color-3;
 }
