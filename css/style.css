@@ -32,8 +32,23 @@ ol, ul {
   list-style: none;
 }
 
-body {
+/* here are stylings for the header section */
+/* styling logo section */
+div.logo {
   background-color: #5B191A;
-  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
