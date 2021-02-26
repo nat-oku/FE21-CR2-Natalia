@@ -1,0 +1,17 @@
+/* styles for the technology article */
+.tech-h1 {
+  background-color: $brand-color-1;
+  color: $brand-color-3;
+  font-size: 1.5em;
+}
+
+
+/* media queries for screens bigger than 1201px*/
+ @media screen and (min-width: 1201px) {
+  main {
+    .hidden {
+      display: none;
+    }
+
+  }
+}
