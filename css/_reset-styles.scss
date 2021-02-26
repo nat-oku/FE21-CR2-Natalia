@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, p {
+  word-wrap: break-word; /* add auto new line when re-sizing screen*/
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol, ul {
+	list-style: none;
+}
