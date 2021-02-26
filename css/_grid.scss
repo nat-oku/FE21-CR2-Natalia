@@ -6,7 +6,7 @@
 
 main {background-color: cadetblue;}
 
-/* 3-column container for 1st articles */
+/* stylings for 3-column container */
 .col-3 {
   width: 90%;
   margin: 0 auto;
@@ -41,6 +41,35 @@ main {background-color: cadetblue;}
     max-height: 50vw;
     object-fit: cover;
   }
+}
+
+/* stylings for banner */
+.col-1-banner {
+  margin-top: 2em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px
+}
+
+/* stylings for 2-column container */
+.col-2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15em;
+  row-gap: 1em;
+
+  .main__article {
+    background-color: $brand-color-2;
+  }
+  .main__article > h4 {
+    color: $brand-color-3;
+    padding: 20px;
+    text-align: center;
+    font-weight: lighter;
+  }
+
 }
 
 
