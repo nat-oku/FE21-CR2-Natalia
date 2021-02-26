@@ -45,7 +45,9 @@ div.logo {
 
   /* media queries for mobile 0px-480px*/
 @media screen and (max-width: 480px) {
-  div.logo {
+  .logo {
+    width: 100%;
+
     #logo-header {
       padding: 25px 40px;
       width: 250px;

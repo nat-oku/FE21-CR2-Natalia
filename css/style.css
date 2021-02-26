@@ -29,102 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-/* styles for the main section */
-main {
-  background-color: #FFFFFF;
-  padding-bottom: 40px;
-}
-
-/* stylings for 3-column container */
-.col-3 {
-  width: 90%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
-  row-gap: 1em;
-}
-
-.col-3 .col-1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  margin-top: 2em;
-  background-color: #C4C4C4;
-}
-
-.col-3 .col-1 > h1 {
-  padding: 10px 20px;
-  font-weight: lighter;
-  font-size: 1.5em;
-}
-
-.col-3 .main__article {
-  background-color: #0E0D0D;
-}
-
-.col-3 .main__article > h4 {
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.col-3 .main__article > img {
-  max-height: 50vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* stylings for banner */
-.col-1-banner {
-  margin-top: 2em;
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px;
-}
-
-/* stylings for 2-column container */
-.col-2 {
-  width: 90%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 15em;
-          column-gap: 15em;
-  row-gap: 2em;
-}
-
-.col-2 .main__article {
-  background-color: #0E0D0D;
-}
-
-.col-2 .main__article > h4 {
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-  font-weight: lighter;
-}
-
-footer {
-  background-color: chocolate;
-}
-
-/* media queries for main section */
-/* media queries for mobile 0px-480px*/
-@media screen and (max-width: 480px) {
-  /* styling the banner section */
-  .mainBanner {
-    display: none;
-  }
-}
-
-/* media queries for tablet 481px-1200px*/
 /* here are stylings for the header section */
 /* styling logo section */
 div.logo {
@@ -179,12 +83,15 @@ div.logo #banner-header {
 /* media queries */
 /* media queries for mobile 0px-480px*/
 @media screen and (max-width: 480px) {
-  div.logo #logo-header {
+  .logo {
+    width: 100%;
+  }
+  .logo #logo-header {
     padding: 25px 40px;
     width: 250px;
     margin: 0 auto;
   }
-  div.logo #banner-header {
+  .logo #banner-header {
     display: none;
   }
   .nav {
@@ -209,6 +116,116 @@ div.logo #banner-header {
   }
 }
 
+/* styles for the main section */
+main {
+  background-color: #FFFFFF;
+  padding-bottom: 40px;
+}
+
+/* styling headlines - h1 */
+.col-1 {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #C4C4C4;
+}
+
+.col-1 > h1 {
+  padding: 10px 20px;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+/* stylings for 3-column container */
+.col-3 {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  row-gap: 1em;
+}
+
+.col-3 .main__article {
+  background-color: #0E0D0D;
+}
+
+.col-3 .main__article > h4 {
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.col-3 .main__article > img {
+  max-height: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* stylings for banner */
+.col-1-banner {
+  margin-top: 2em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* stylings for 2-column container */
+.col-2 {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 15em;
+          column-gap: 15em;
+  row-gap: 2em;
+}
+
+.col-2 .col-2__article {
+  background-color: #0E0D0D;
+  margin-bottom: 30px;
+}
+
+.col-2 .col-2__article > h4 {
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* media queries for main section */
+/* media queries for mobile 0px-480px*/
+@media screen and (max-width: 480px) {
+  /* styling headlines - h1 */
+  .col-1 {
+    width: 100%;
+    gap: 2em;
+  }
+  /* styling the 3-col section */
+  .col-3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .col-2 {
+    margin-top: 20px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .col-2 .col-2__article {
+    background-color: #0E0D0D;
+  }
+  /* styling the banner section */
+  .col-1-banner {
+    display: none;
+  }
+}
+
+/* media queries for tablet 481px-1200px*/
 /* styles for footer */
 footer {
   background-color: #0E0D0D;
