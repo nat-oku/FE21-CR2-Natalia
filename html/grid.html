@@ -8,112 +8,70 @@
   <title>Newspaper CS | Home</title>
 </head>
 <body>
-  <header>
-    <!-- logo section -->
-    <div class="logo">
-      <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-header">
-      
-      <a href="https://codefactory.wien/de/full-stack-web-developer-de/" target="_blank"><img id="banner-header" src="../img/banner-1.png" alt="Full Stack Developer banner"></a>
-    </div>
-    <!-- navbar section -->
-    <ul class="nav">
-      <li class="nav-link"><a href=home.html>Home</a></li>
-      <li class="nav-link"><a href=technology.html>Tech</a></li>
-      <li class="nav-link"><a href=culture.html>Culture</a></li>
-      <li class="nav-link"><a href=video.html>Video</a></li>
-    </ul>
-  </header>
-
-  <main>
-
-    <!-- articles sections start -->
-    
-      <!-- top news and popular section -->
-    <div class="articleHeadline">
-      <h1>Top News</h1>
-    </div>
-
-      <!-- 3-col container -->
-    <div class="container">
-      <div class="container__article">
-        <img src="../img/jeff.png" alt="Jeff Benson" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Lex Luthor or the boy next door?</h4>
+  <div class="gridContainer">
+    <header>
+      <!-- logo section -->
+      <div class="logo">
+        <img src="../img/logo-newspaper-cf.png" alt="newspaper FC logo" id="logo-header">
+        
+        <a href="https://codefactory.wien/de/full-stack-web-developer-de/" target="_blank"><img id="banner-header" src="../img/banner-1.png" alt="Full Stack Developer banner"></a>
       </div>
-      <div class="container__article">
-        <img src="../img/eu.png" alt="EU" class="container--itemSquare">
-        <h4 class="container--itemHeadline">10 ways to keep your files safe</h4>
-      </div>
-      <div class="container__article">
-        <img src="../img/phone.png" alt="Spotify App" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Spotify raises limit of offline songs to 10,000 per device</h4>
-      </div>
-    </div>
-
-      <!-- top news and popular section -->
-    <div class="articleHeadline">
-      <h1>Popular</h1>
-    </div>
-      <!-- 3-col container -->
-    <div class="container">
-      <div class="container__article">
-        <img src="../img/iphone.png" alt="Jeff Benson" class="container--itemSquare">
-        <h4 class="container--itemHeadline">All the reasons to avoid purchasing an Iphone</h4>
-      </div>
-      <div class="container__article">
-        <img src="../img/one.png" alt="EU" class="container--itemSquare">
-        <h4 class="container--itemHeadline">OnePlus announces new solar-powered earphones</h4>
-      </div>
-      <div class="container__article">
-        <img src="../img/musk.jpg" alt="Spotify App" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Elon Musk smokes a cigarette in space</h4>
-      </div>
-    </div>
-    <!-- articles sections end -->
-
-    <!-- banner section -->
-    <div class="mainBanner">
-      <a href="https://www.codefactory.wien" target="_blank"><img src="../img/banner-3.png" alt="Banner How to become a developer?"></a>
-    </div>
-    <!-- banner section end -->
-
-    <!-- 2-col container -->
-    <div class="container">
-      <div class="container__article" id="spaceRight">
-        <img src="../img/polar.png" alt="Polar watches" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Polar's watches will watch you when you sleep</h4>
-      </div>
-      <div class="container__article spaceLeft">
-        <img src="../img/nasa.png" alt="Nasa" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Popular holiday destinations for this Christmas</h4>
-      </div>
-    </div>
-
-    <div class="articleHeadline"></div>
-
-    <!-- 2-col container -->
-    <div class="container">
-      <div class="container__article spaceRight">
-        <img src="../img/smart.png" alt="Polar watches" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Polar's watches will watch you when you sleep</h4>
-      </div>
-      <div class="container__article spaceLeft">
-        <img src="../img/snowden.jpg" alt="Nasa" class="container--itemSquare">
-        <h4 class="container--itemHeadline">Why JavaScript is the perfect technology for you</h4>
-      </div>
-    </div>
-
-    
-
-
-
-    
-
-
+      <!-- navbar section -->
+      <ul class="nav">
+        <li class="nav-link"><a href=home.html>Home</a></li>
+        <li class="nav-link"><a href=technology.html>Tech</a></li>
+        <li class="nav-link"><a href=culture.html>Culture</a></li>
+        <li class="nav-link"><a href=video.html>Video</a></li>
+      </ul>
+    </header>
   
-  </main>
+    <main>
+      <!-- 3-column container for 1st articles -->
+      <div class="col-3" > <!-- image reihe -->
+        <div class="col-1 main--h1" >
+          <h1>Top News</h1>
+        </div>
+        <div class="main__article">
+          <img src="../img/jeff.png" alt="Jeff Benson" class="main--item">
+          <h4 class="main--h4">Lex Luthor or the boy next door?</h4>
+        </div>
+        <div class="main__article">
+          <img src="../img/eu.png" alt="EU" class="main--item">
+          <h4 class="main--h4">10 ways to keep your files safe</h4>
+        </div>
+        <div class="main__article">
+          <img src="../img/phone.png" alt="Spotify App" class="main--item">
+          <h4 class="main--h4">Spotify raises limit of offline songs to 10,000 per device</h4>
+        </div>
+      </div>
 
+      <!-- 3-column container for 1st articles -->
+      <div class="col-3" > <!-- image reihe -->
+        <div class="col-1 main--h1" ><h1>Popular</h1>
+        </div>
+        <div class="main__article">
+          <img src="../img/iphone.png" alt="iPhone" class="main--item">
+          <h4 class="main--h4">All the reasons to avoid purchasing an Iphone</h4>
+        </div>
+        <div class="main__article">
+          <img src="../img/one.png" alt="EU" class="main--item">
+          <h4 class="main--h4">OnePlus announces new solar-powered earphones</h4>
+        </div>
+        <div class="main__article">
+          <img src="../img/musk.jpg" alt="Spotify App" class="main--item">
+          <h4 class="main--h4">Elon Musk smokes a cigarette in space</h4>
+        </div>
+      </div>
 
-  <footer style="background-color: chocolate;">dewdew</footer>
+      <!-- 1-column container for banner -->
+      
+ 
+    </main>
+  
+  
+    <footer >dewdew</footer>
+  </div>
+
 
 
 
