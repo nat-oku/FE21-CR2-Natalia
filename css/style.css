@@ -29,13 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-.gridContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 2fr auto;
-      grid-template-rows: auto 2fr auto;
-}
-
+/* styles for the main section */
 main {
   background-color: #FFFFFF;
   padding-bottom: 40px;
@@ -118,33 +112,19 @@ main {
 }
 
 footer {
-  background-color: #0E0D0D;
+  background-color: chocolate;
 }
 
-.footerContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px;
+/* media queries for main section */
+/* media queries for mobile 0px-480px*/
+@media screen and (max-width: 480px) {
+  /* styling the banner section */
+  .mainBanner {
+    display: none;
+  }
 }
 
-.footerContainer #logo-footer {
-  width: 10em;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.footer--h4 {
-  color: #FFFFFF;
-  text-align: center;
-  font-weight: lighter;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
+/* media queries for tablet 481px-1200px*/
 /* here are stylings for the header section */
 /* styling logo section */
 div.logo {
@@ -258,9 +238,6 @@ footer {
   padding-bottom: 40px;
 }
 
-/*
-
-@import 'main'; */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
