@@ -99,6 +99,10 @@ div.logo #banner-header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nav li a {
+    padding: 6px;
+    font-size: 1em;
+  }
 }
 
 /* media queries for tablet 481px-1200px*/
