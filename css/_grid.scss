@@ -1,0 +1,50 @@
+.gridContainer {
+  display: grid;
+  grid-template-rows: auto 2fr auto;
+}
+
+
+main {background-color: cadetblue;
+
+  .col-3 {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 1em;
+
+    .col-1 {
+      grid-column: 1/4;
+      margin-top: 2em;
+      background-color: $brand-color-4;
+    }
+
+    .col-1 > h1 {
+      padding: 10px 20px;
+      font-weight: lighter;
+      font-size: 1.5em;
+    }
+
+    .main__article {
+      background-color: $brand-color-2;
+    }
+    .main__article > h4 {
+      color: $brand-color-3;
+      padding: 20px;
+      text-align: center;
+      font-weight: lighter;
+    }
+
+    .main__article > img {
+      max-height: 50vw;
+      object-fit: cover;
+    }
+
+  }
+  
+}
+
+
+
+footer {background-color: chocolate;}
