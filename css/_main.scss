@@ -2,20 +2,21 @@
 
 main {
   background-color: $brand-color-3;
-  padding-bottom: 40px ;}
+  padding-bottom: 40px ;
+}
 
-  /* styling headlines - h1 */
-  .col-1 {
-    width: 90%;
-    margin: 30px auto;
-    background-color: $brand-color-4;
-  }
+/* styling headlines - h1 */
+.col-1 {
+  width: 90%;
+  margin: 30px auto;
+  background-color: $brand-color-4;
 
-  .col-1 > h1 {
+  h1 {
     padding: 10px 20px;
     font-weight: lighter;
     font-size: 1.5em;
   }
+}
 
 /* stylings for 3-column container */
 .col-3 {
@@ -81,7 +82,10 @@ main {
     /* styling headlines - h1 */
     .col-1 {
       width: 100%;
-      gap: 2em;
+
+      h1 {
+        text-align: center;
+      }
     }
 
     /* styling the 3-col section */
