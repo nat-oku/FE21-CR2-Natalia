@@ -229,6 +229,35 @@ div.logo #banner-header {
   }
 }
 
+/* styles for footer */
+footer {
+  background-color: #0E0D0D;
+}
+
+.footerContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+.footerContainer #logo-footer {
+  width: 10em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer--h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 /*
 
 @import 'main'; */

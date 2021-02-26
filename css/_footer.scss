@@ -1,0 +1,25 @@
+/* styles for footer */
+
+footer {
+  background-color: $brand-color-2;
+  }
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-around;    
+  padding: 20px;
+        
+  #logo-footer {
+    width: 10em;
+    align-self: flex-end;
+  }
+}
+
+.footer--h4 {
+  color: $brand-color-3;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 20px ;
+  padding-bottom: 40px;
+}
