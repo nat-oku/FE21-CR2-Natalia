@@ -1,51 +1,77 @@
 /* styles for the main section */
 
-/* styling the headlines the article sections */
-.articleHeadline {
-  width: 90%;
-  background-color: $brand-color-4;
-  margin: 20px auto;
+main {
+  background-color: $brand-color-3;
+  padding-bottom: 40px ;}
 
-  h1 {
-    padding-left: 20px;
+/* stylings for 3-column container */
+.col-3 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 1em;
+
+  .col-1 {
+    grid-column: 1/4;
+    margin-top: 2em;
+    background-color: $brand-color-4;
+  }
+
+  .col-1 > h1 {
+    padding: 10px 20px;
     font-weight: lighter;
     font-size: 1.5em;
   }
-}
 
-/* styling the articles sections */
-div[class=container] {
-  width: 90%;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: row;
-
-  .container__article {
-    max-width: 33,3%;
-    padding-right: 20px;
-  }
-
-  .container__article:last-child {
-    padding-right: 0px;
-  }
-
-  .container--itemHeadline {
-    color: $brand-color-3;
+  .main__article {
     background-color: $brand-color-2;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: lighter;
-    height: 2.7em;
+  }
+  .main__article > h4 {
+    color: $brand-color-3;
     padding: 20px;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .main__article > img {
+    max-height: 50vw;
+    object-fit: cover;
   }
 }
 
-/* styling the banner section */
-.mainBanner {
+/* stylings for banner */
+.col-1-banner {
+  margin-top: 2em;
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px
 }
 
+/* stylings for 2-column container */
+.col-2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15em;
+  row-gap: 2em;
+
+  .main__article {
+    background-color: $brand-color-2;
+  }
+  .main__article > h4 {
+    color: $brand-color-3;
+    padding: 20px;
+    text-align: center;
+    font-weight: lighter;
+  }
+}
+
+
+
+footer {background-color: chocolate;}
 /* media queries for main section */
 
   /* media queries for mobile 0px-480px*/
