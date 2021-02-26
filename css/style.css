@@ -82,6 +82,7 @@ ul[class=nav] a:hover {
   text-decoration: underline;
 }
 
+/* media queries */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
