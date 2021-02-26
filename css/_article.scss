@@ -2,25 +2,25 @@
 .articleContainer {
   width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
+
+
 
   h1 {
     font-weight: lighter;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px;
   }
+}
 
-  .col-video {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    margin: 10px 10px;
-  }
+.col-video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3em;
+  margin: 0 auto;
+  padding: 10px;
 
-  .col-2-gap {
-    column-gap: 3em;
+  .articleContainer__video {
+    margin: 0px 0px 10px 20px;
   }
 
   iframe {
@@ -29,41 +29,60 @@
     border: none;
     box-shadow: -20px 20px $brand-color-1;
   }
-
-  .articleContainer__text {
-    margin-left: 20px;
-  }
-
-  .articleDivision {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid $brand-color-4;
+  
+  p {
+    margin: 10px;
   }
 }
 
+.articleDivision {
+  width: 90%;
+  margin: 50px auto 30px auto;
+  border-bottom: 1.5px solid $brand-color-4;
+}
+
+
 /* media queries */
 
-  /* media queries for mobile 0px-480px*/
+  /* media queries for mobile 0px-481px */
 @media screen and (max-width: 480px) {
+  .articleContainer {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
   .col-video {
-    flex-wrap: wrap;
-
+    grid-template-columns: 1fr;
+  
+    .articleContainer__video {
+      margin: 0px auto;
+    }
+  
     iframe {
-      width: 100%;
-      margin: 30px 10px;
-      box-shadow: -20px -20px $brand-color-1;
+      width: 19em;
+      box-shadow: -10px 10px $brand-color-1;
+      margin: 0 auto 20px auto;
     }
   }
 }
 
-  /* media queries for tablet 481px-1200px*/
+ /* media queries for tablet 481px-1200px */
 @media screen and (min-width: 481px) and (max-width: 1200px) {
+  .articleContainer {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
   .col-video {
-    flex-wrap: wrap;
-
+    grid-template-columns: 1fr;
+  
+    .articleContainer__video {
+      margin: 0px auto;
+    }
+  
     iframe {
-      margin: 30px 30px;
-      box-shadow: -20px -20px $brand-color-1;
+      width: 30em;
+      margin: 0 auto 40px auto;
     }
   }
 }
