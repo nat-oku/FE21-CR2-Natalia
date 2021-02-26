@@ -130,7 +130,7 @@ div.logo #banner-header {
 /* styling the articles sections */
 div[class=container] {
   width: 90%;
-  margin: 0px auto 50px auto;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,13 +159,16 @@ div[class=container] .container--itemHeadline {
   padding: 20px;
 }
 
+/* styling the banner section */
+.mainBanner {
+  width: 80%;
+  margin: 50px auto;
+}
+
 /* media queries for main section */
 /* media queries for mobile 0px-480px*/
 @media screen and (max-width: 480px) {
   /* styling the headlines the article sections */
-  .articleHeadline {
-    width: 100%;
-  }
   .articleHeadline h1 {
     text-align: center;
   }
@@ -183,6 +186,10 @@ div[class=container] .container--itemHeadline {
   div[class=container] .container--itemHeadline {
     font-size: 1em;
     height: 3.5em;
+  }
+  /* styling the banner section */
+  .mainBanner {
+    display: none;
   }
 }
 
@@ -209,7 +216,6 @@ div[class=container] .container--itemHeadline {
   }
   div[class=container] .container__article:last-child {
     padding-right: 0px;
-    display: none;
   }
   div[class=container] .container--itemHeadline {
     color: #FFFFFF;
