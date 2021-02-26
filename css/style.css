@@ -129,7 +129,7 @@ main {
   background-color: #C4C4C4;
 }
 
-.col-1 > h1 {
+.col-1 h1 {
   padding: 10px 20px;
   font-weight: lighter;
   font-size: 1.5em;
@@ -204,7 +204,9 @@ main {
   /* styling headlines - h1 */
   .col-1 {
     width: 100%;
-    gap: 2em;
+  }
+  .col-1 h1 {
+    text-align: center;
   }
   /* styling the 3-col section */
   .col-3 {
