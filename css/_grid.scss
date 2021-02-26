@@ -4,7 +4,9 @@
 }
 
 
-main {background-color: cadetblue;}
+main {
+  background-color: $brand-color-3;
+padding-bottom: 40px ;}
 
 /* stylings for 3-column container */
 .col-3 {
@@ -58,7 +60,7 @@ main {background-color: cadetblue;}
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15em;
-  row-gap: 1em;
+  row-gap: 2em;
 
   .main__article {
     background-color: $brand-color-2;
@@ -69,9 +71,30 @@ main {background-color: cadetblue;}
     text-align: center;
     font-weight: lighter;
   }
-
 }
 
 
 
-footer {background-color: chocolate;}
+footer {
+  background-color: $brand-color-2;
+  }
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-around;    
+  padding: 20px;
+        
+  #logo-footer {
+    width: 10em;
+    align-self: flex-end;
+  }
+}
+
+.footer--h4 {
+  color: $brand-color-3;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 20px ;
+  padding-bottom: 40px;
+}
