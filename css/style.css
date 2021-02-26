@@ -136,25 +136,23 @@ div[class=container] {
   display: flex;
 }
 
-div[class=container] div:first-child {
+div[class=container] .container__article {
+  max-width: 33,3%;
   padding-right: 20px;
 }
 
-div[class=container] div:nth-child(even) {
-  padding: 0px 20px;
-}
-
-div[class=container] div:last-child {
-  padding-left: 20px;
+div[class=container] .container__article:last-child {
+  padding-right: 0px;
 }
 
 div[class=container] .container--itemHeadline {
   color: #FFFFFF;
   background-color: #0E0D0D;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: lighter;
-  padding: 10px;
+  height: 2.7em;
+  padding: 20px;
 }
 
 body {
