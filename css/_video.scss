@@ -1,0 +1,26 @@
+/* the stylings for the articleContainer were imported from _article.scss stylesheet;
+
+below you can find stylings only for this video page */
+
+.videoContainer {
+  margin: 60px auto;
+  box-shadow: -10px 0px 10px $brand-color-4, 10px 0px 10px $brand-color-4;
+
+  h1 {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .col-video {
+    display: block;
+    padding: 10px;
+
+    iframe {
+      margin: 0 auto;
+      width: 80%;
+      height: 90vh;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
