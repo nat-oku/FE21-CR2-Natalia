@@ -37,7 +37,8 @@ body {
 }
 
 main {
-  background-color: cadetblue;
+  background-color: #FFFFFF;
+  padding-bottom: 40px;
 }
 
 /* stylings for 3-column container */
@@ -102,7 +103,7 @@ main {
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 15em;
           column-gap: 15em;
-  row-gap: 1em;
+  row-gap: 2em;
 }
 
 .col-2 .main__article {
