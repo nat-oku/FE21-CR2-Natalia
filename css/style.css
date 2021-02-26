@@ -26,7 +26,7 @@ a {
 
 body {
   line-height: 1.5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* here are stylings for the header section */
@@ -111,6 +111,13 @@ div.logo #banner-header {
     padding: 30px 20px 10px;
     width: 15em;
   }
+}
+
+/* styles for the main section */
+/* styling the top news and popular sections */
+main {
+  background-color: blue;
+  height: 500vh;
 }
 
 body {
