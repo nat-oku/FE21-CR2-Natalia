@@ -1,8 +1,45 @@
 /* styles for the main section */
 
-/* styling the top news and popular sections */
+/* styling the headlines the article sections */
+.articleHeadline {
+  width: 90%;
+  background-color: $brand-color-4;
+  margin: 20px auto;
 
-main {
-  background-color: blue;
-  height: 500vh;
+  h1 {
+    padding-left: 20px;
+    font-weight: lighter;
+    font-size: 1.5em;
+  }
 }
+
+/* styling the articles sections */
+div[class=container] {
+  width: 90%;
+  margin: 0px auto 50px auto;
+  display: flex;
+
+
+  
+  div:first-child {
+    padding-right: 20px;
+  }
+
+  div:nth-child(even) {
+    padding: 0px 20px;
+  }
+
+  div:last-child {
+    padding-left: 20px;
+  }
+
+  .container--itemHeadline {
+    color: $brand-color-3;
+    background-color: $brand-color-2;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding: 10px;
+  }
+}
+
