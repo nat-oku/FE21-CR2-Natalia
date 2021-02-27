@@ -1,10 +1,10 @@
 @import 'variables';
 @import 'reset-styles';
 @import 'header';
-@import 'main';
 @import 'footer';
 
 /* import styles for further html documents */ 
+@import 'home';
 @import 'article';
 @import 'video';
 @import 'technology';

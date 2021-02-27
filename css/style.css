@@ -120,23 +120,85 @@ div.logo #banner-header {
   }
 }
 
-/* styles for the main section */
-main {
-  background-color: #FFFFFF;
+/* styles for footer */
+footer {
+  background-color: #0E0D0D;
+}
+
+.footerContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+.footerContainer #logo-footer {
+  width: 10em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer--h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
-/* styling headlines - h1 */
+/* media queries */
+/* media queries for mobile 0px-480px*/
+@media screen and (max-width: 480px) {
+  .footerContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .footerContainer .footerContainer__nav {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin: 15px 0px;
+  }
+  .footerContainer #logo-footer {
+    margin: 30px auto 30px auto;
+  }
+  .footer--h4 {
+    margin: 5px;
+  }
+}
+
+/* import styles for further html documents */
+/* styles for the main section */
+main {
+  padding-bottom: 40px;
+}
+
+/* styling headlines - h1 & p */
 .col-1 {
   width: 90%;
   margin: 30px auto;
-  background-color: #C4C4C4;
 }
 
 .col-1 h1 {
   padding: 10px 20px;
   font-weight: lighter;
   font-size: 1.5em;
+  background-color: #C4C4C4;
+}
+
+.col-1 p {
+  text-align: right;
+  color: #0E0D0D;
+  margin: 15px 0px;
 }
 
 /* stylings for 3-column container */
@@ -246,63 +308,6 @@ main {
   }
 }
 
-/* styles for footer */
-footer {
-  background-color: #0E0D0D;
-}
-
-.footerContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px;
-}
-
-.footerContainer #logo-footer {
-  width: 10em;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.footer--h4 {
-  color: #FFFFFF;
-  text-align: center;
-  font-weight: lighter;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-/* media queries */
-/* media queries for mobile 0px-480px*/
-@media screen and (max-width: 480px) {
-  .footerContainer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 0px;
-  }
-  .footerContainer .footerContainer__nav {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    margin: 15px 0px;
-  }
-  .footerContainer #logo-footer {
-    margin: 30px auto 30px auto;
-  }
-  .footer--h4 {
-    margin: 5px;
-  }
-}
-
-/* import styles for further html documents */
 /* here are stylings for the article.html file */
 .articleContainer {
   width: 90%;
