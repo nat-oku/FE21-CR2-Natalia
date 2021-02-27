@@ -1,20 +1,25 @@
 /* styles for the main section */
 
 main {
-  background-color: $brand-color-3;
   padding-bottom: 40px ;
 }
 
-/* styling headlines - h1 */
+/* styling headlines - h1 & p */
 .col-1 {
   width: 90%;
   margin: 30px auto;
-  background-color: $brand-color-4;
 
   h1 {
     padding: 10px 20px;
     font-weight: lighter;
     font-size: 1.5em;
+    background-color: $brand-color-4;
+  }
+
+  p {
+    text-align: right;
+    color: $brand-color-2;
+    margin: 15px 0px;
   }
 }
 
