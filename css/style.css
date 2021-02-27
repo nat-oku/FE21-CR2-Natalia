@@ -425,9 +425,16 @@ below you can find stylings only for this video page */
 
 /* styles for the technology article */
 .tech-h1 {
-  background-color: #5B191A;
   color: #FFFFFF;
   font-size: 1.5em;
+}
+
+.tech-h1 h1 {
+  background-color: #5B191A;
+}
+
+.tech-h1 h1:hover {
+  background-color: #0E0D0D;
 }
 
 /* media queries for screens bigger than 1201px*/

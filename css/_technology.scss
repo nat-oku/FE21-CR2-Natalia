@@ -1,8 +1,15 @@
 /* styles for the technology article */
 .tech-h1 {
-  background-color: $brand-color-1;
   color: $brand-color-3;
   font-size: 1.5em;
+
+  h1 {
+    background-color: $brand-color-1;
+  }
+
+  h1:hover {
+    background-color: $brand-color-2;
+  }
 }
 
 
